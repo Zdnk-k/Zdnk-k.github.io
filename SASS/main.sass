@@ -2,21 +2,24 @@ $main: rgba(#000000, 0.87)
 $uber_light_grey: #d6d6d6
 
 
-:root
-  font-size: 16px
-
-
 html, body
   margin: 0
   padding: 0
   height: 100%
   width: 100%
   font-family: 'Amatic SC'
+  font-size: 16px
 
 
 .title
+  font-family: 'Amatic SC'
+  font-size: 3rem
+  font-weight: 700
+
 
 .sub-title
+  font-size: 2.5rem
+  font-family: 'Amatic SC'
 
 .text
   font-family: 'Roboto Mono'
@@ -24,5 +27,20 @@ html, body
 .button
 
 
-header
+#main_header
   height: 100vh
+  background: url("../images/header.jpg")
+
+  #navbar
+    height: 2em
+    #navbar_logo
+
+    #navbar_links
+      list-style: none
+      float: right
+      li
+        align-self: center
+        a
+          color: #fff
+          &:hover
+            text-decoration: underline

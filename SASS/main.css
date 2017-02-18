@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Amatic SC";
+  font-size: 16px; }
+
+.title {
+  font-family: "Amatic SC";
+  font-size: 3rem;
+  font-weight: 700; }
+
+.sub-title {
+  font-size: 2.5rem;
+  font-family: "Amatic SC"; }
+
+.text {
+  font-family: "Roboto Mono"; }
+
+#main_header {
+  height: 100vh;
+  background: url("../images/header.jpg"); }
+  #main_header #navbar {
+    height: 2em; }
+    #main_header #navbar #navbar_links {
+      list-style: none;
+      float: right; }
+      #main_header #navbar #navbar_links li {
+        align-self: center; }
+        #main_header #navbar #navbar_links li a {
+          color: #fff; }
+          #main_header #navbar #navbar_links li a:hover {
+            text-decoration: underline; }
+
+/*# sourceMappingURL=main.css.map */
