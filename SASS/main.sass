@@ -1,5 +1,9 @@
 $main: rgba(#000000, 0.87)
 $uber_light_grey: #d6d6d6
+$whiteish: rgba(#fff, 0.4)
+$highlight: #4ad7b1
+
+
 
 
 html, body
@@ -7,11 +11,21 @@ html, body
   padding: 0
   height: 100%
   width: 100%
-  font-family: 'Amatic SC'
+  font-family: 'Amatic SC', 'Roboto Mono', monospace
   font-size: 16px
+  color: $main
+
+a
+  text-decoration: none
+  color: $main
+  &:hover, &:focus
+    color: $highlight
 
 .content
+  margin: 0 auto
+  width: 1440px
   max-width: 90%
+  text-align: center
 
 .title
   font-family: 'Amatic SC'
@@ -26,23 +40,87 @@ html, body
 .text
   font-family: 'Roboto Mono'
 
+
 .button
 
 
 #main_header
   height: 100vh
+  padding: 0
   background: url("../images/header.jpg")
+  background-position: center
+  background-size: cover
+  background-repeat: none
+  position: relative
 
   #navbar
+    font-size: 2.75rem
+    font-weight: 700
+    // color: #fff
     height: 2em
     #navbar_logo
+      float: left
 
     #navbar_links
+      padding: 0
       list-style: none
       float: right
+      display: inline-block
       li
+        padding: 0
+        display: inline-block
         align-self: center
         a
-          color: #fff
-          &:hover
-            text-decoration: underline
+          padding-left: 0.4em
+
+
+
+
+  .heading_content
+    position: absolute
+    top: 55%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    #home_title
+      color: #fff
+      font-weight: 700
+      padding: 0
+      .title
+        font-size: 10rem
+        margin: 0
+        border: solid 0.5rem #fff
+
+      .sub_title
+        margin: 0.3em
+        font-size: 4rem
+
+    #heading_contact
+      margin: 2em 2em
+      background: $whiteish
+      border-radius: 0.3rem
+      font-size: 2em
+      font-family: 'Roboto Mono'
+      a
+        padding: 0.1em 0
+        color: $main
+        &:hover, &:focus
+          text-decoration: none
+
+  #down_chevron
+    color: #fff
+    position: absolute
+    left: 50%
+    bottom: 5%
+    &:hover, &:focus
+      color: $highlight
+
+
+
+footer
+  background: $main
+  .title
+    color: #fff
+  .text
+    padding: 2rem
+    color: #fff

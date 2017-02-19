@@ -2,61 +2,93 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+        <!-- DA FUKC I DONNO -->
         <meta name="viewport" content="width=device-width">
+        <!-- stylesheet -->
         <link rel="stylesheet" href="./SASS/main.css" media="screen" title="no title">
+        <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto|Roboto+Mono" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome  -->
+        <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>zdnk.k | Personal page</title>
     </head>
     <body>
         <header id="main_header">
           <div class="content">
             <nav id="navbar">
+              <p id="navbar_logo">zdnk.k</p>
               <ul id="navbar_links">
-                <li><a href="#about" class="title">About ME</a></li>
-                <li><a href="#projects" class="title">Projects</a></li>
-                <!-- <li><a href=""></a></li> -->
-                <!-- <li><a href="Contact"></a></li> -->
+                <li><a href="#about">About ME</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
 
             <div class="heading_content">
-              <h1>zdnk.k</h1>
-              <p> Zdenko Klain | Personal page</p>
+              <div id="home_title">
+                <h1 class="title">zdnk.k</h1>
+                <p class="sub_title"> Zdenko Klain | Personal page</p>
+              </div>
+
+              <div id="heading_contact">
+                <!-- add icon -->
+                <a href="https://github.com/Zdnk-k">
+                  zdnk.k on <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Zdnk-k/Zdnk-k.github.io">| source</a>
+
+              </div>
             </div>
 
-              <div class="heading_conctact">
-                <!-- add icon -->
-                <a href="https://github.com/Zdnk-k">https://github.com/Zdnk-k</a>
-                <a href="https://github.com/Zdnk-k/Zdnk-k.github.io">Source</a>
-              </div>
+            <a href="#about" aria-label="Scroll Down" id="down_chevron">
+              <i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i>
+            </a>
           </div>
         </header>
 
         <section id="about">
-          <h1 class="title">About ME</h1>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <div class="content">
+            <h1 class="title">About ME</h1>
+            <p class="text">
+              "Život je ako smrť, len celkom iný."
+              <br>
+              <h3 class="title">
+                The key to being happy:
+              </h3>
+              <p class="text">
+                The universe is a cruel, uncaring void. The key to being happy isn't a search for meaning. It's to just keep yourself busy with unimportant nonsense and eventually, you'll be dead. - Mr Peanutbutter.
+              </p>
+            </p>
+          </div>
         </section>
+
+
 
         <section id="projects">
-          <h1 class="title">
-            Projects
-          </h1>
+          <div class="content">
+            <h1 class="title">Projects</h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </section>
 
-        <div class="main_content">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
 
         <footer>
-
+          <div class="content">
+            <h1 class="title">Footer</h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </footer>
     </body>
 </html>
