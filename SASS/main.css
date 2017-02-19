@@ -13,7 +13,8 @@ a {
   a:hover, a:focus {
     color: #4ad7b1; }
 
-.content {
+.container {
+  padding: 0;
   margin: 0 auto;
   width: 1440px;
   max-width: 90%;
@@ -24,71 +25,96 @@ a {
   font-size: 3rem;
   font-weight: 700; }
 
-.sub-title {
+.sub_title {
   font-size: 2.5rem;
   font-family: "Amatic SC"; }
 
 .text {
   font-family: "Roboto Mono"; }
 
-#main_header {
+.navbar {
+  margin: 0;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: none;
+  height: 2.5em; }
+  .navbar .container {
+    padding: 1em 0 1em 0;
+    width: 100%;
+    align-self: center; }
+  .navbar .navbar-brand {
+    margin: 0;
+    color: #fff; }
+    .navbar .navbar-brand .title {
+      text-decoration: none; }
+  .navbar .nav li a {
+    color: #fff; }
+    .navbar .nav li a:hover {
+      text-decoration: underline; }
+
+.shrink {
+  background: rgba(0, 0, 0, 0.87);
+  font-size: 1.75rem;
+  height: 2.25em; }
+  .shrink .container {
+    padding: 0.25em; }
+  .shrink .title {
+    color: rgba(255, 255, 255, 0.9); }
+  .shrink .nav li a {
+    color: rgba(255, 255, 255, 0.9); }
+
+#home {
   height: 100vh;
   padding: 0;
-  background: url("../images/header.jpg");
+  background: url("../images/1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: none;
-  position: relative; }
-  #main_header #navbar {
-    font-size: 2.75rem;
-    font-weight: 700;
-    height: 2em; }
-    #main_header #navbar #navbar_logo {
-      float: left; }
-    #main_header #navbar #navbar_links {
-      padding: 0;
-      list-style: none;
-      float: right;
-      display: inline-block; }
-      #main_header #navbar #navbar_links li {
-        padding: 0;
-        display: inline-block;
-        align-self: center; }
-        #main_header #navbar #navbar_links li a {
-          padding-left: 0.4em; }
-  #main_header .heading_content {
+  background-color: transparent;
+  position: relative;
+  text-align: center; }
+  #home .heading_content {
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    #main_header .heading_content #home_title {
-      color: #fff;
+    #home .heading_content #home_title {
+      color: rgba(255, 255, 255, 0.9);
       font-weight: 700;
-      padding: 0; }
-      #main_header .heading_content #home_title .title {
+      padding: 0;
+      text-align: center; }
+      #home .heading_content #home_title .title {
         font-size: 10rem;
-        margin: 0;
-        border: solid 0.5rem #fff; }
-      #main_header .heading_content #home_title .sub_title {
+        margin: 0; }
+      #home .heading_content #home_title .sub_title {
         margin: 0.3em;
         font-size: 4rem; }
-    #main_header .heading_content #heading_contact {
-      margin: 2em 2em;
+    #home .heading_content #heading_contact {
+      margin: 2em 1.5em;
       background: rgba(255, 255, 255, 0.4);
       border-radius: 0.3rem;
-      font-size: 2em;
-      font-family: "Roboto Mono"; }
-      #main_header .heading_content #heading_contact a {
+      font-size: 2rem;
+      font-family: "Roboto Mono";
+      display: flex;
+      justify-content: center; }
+      #home .heading_content #heading_contact p {
+        font-size: 2rem;
+        padding: 0 0.5em;
+        margin: 0; }
+      #home .heading_content #heading_contact a {
         padding: 0.1em 0;
         color: rgba(0, 0, 0, 0.87); }
-        #main_header .heading_content #heading_contact a:hover, #main_header .heading_content #heading_contact a:focus {
-          text-decoration: none; }
-  #main_header #down_chevron {
-    color: #fff;
+        #home .heading_content #heading_contact a:hover, #home .heading_content #heading_contact a:focus {
+          text-decoration: none;
+          color: #4ad7b1; }
+        #home .heading_content #heading_contact a span {
+          color: rgba(0, 0, 0, 0.87); }
+  #home #down_chevron {
+    color: rgba(255, 255, 255, 0.9);
     position: absolute;
     left: 50%;
     bottom: 5%; }
-    #main_header #down_chevron:hover, #main_header #down_chevron:focus {
+    #home #down_chevron:hover, #home #down_chevron:focus {
       color: #4ad7b1; }
 
 footer {
