@@ -22,7 +22,7 @@ a {
 
 .title {
   font-family: "Amatic SC";
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700; }
 
 .sub_title {
@@ -33,6 +33,7 @@ a {
   font-family: "Roboto Mono"; }
 
 .navbar {
+  position: fixed;
   margin: 0;
   width: 100%;
   background-color: transparent;
@@ -47,31 +48,38 @@ a {
     color: #fff; }
     .navbar .navbar-brand .title {
       text-decoration: none; }
-  .navbar .nav li a {
-    color: #fff; }
-    .navbar .nav li a:hover {
-      text-decoration: underline; }
+  .navbar .nav li {
+    white-space: nowrap; }
+    .navbar .nav li a {
+      color: rgba(255, 255, 255, 0.75); }
+      .navbar .nav li a:hover {
+        color: #fff;
+        font-size: 3.2rem; }
 
 .shrink {
+  margin-bottom: 3rem;
   background: rgba(0, 0, 0, 0.87);
-  font-size: 1.75rem;
-  height: 2.25em; }
+  height: 2.25em;
+  box-shadow: 0.15em 0 0.25em 0.2em rgba(0, 0, 0, 0.67); }
   .shrink .container {
-    padding: 0.25em; }
+    padding: 0.25em;
+    width: 80%; }
   .shrink .title {
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.9); }
   .shrink .nav li a {
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.9); }
 
 #home {
   height: 100vh;
   padding: 0;
-  background: url("../images/1.jpg");
+  background: url("../images/header.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: none;
   background-color: transparent;
-  position: relative;
+  background-attachment: fixed;
   text-align: center; }
   #home .heading_content {
     position: absolute;
@@ -91,7 +99,7 @@ a {
         font-size: 4rem; }
     #home .heading_content #heading_contact {
       margin: 2em 1.5em;
-      background: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.75);
       border-radius: 0.3rem;
       font-size: 2rem;
       font-family: "Roboto Mono";
@@ -106,7 +114,7 @@ a {
         color: rgba(0, 0, 0, 0.87); }
         #home .heading_content #heading_contact a:hover, #home .heading_content #heading_contact a:focus {
           text-decoration: none;
-          color: #4ad7b1; }
+          color: rgba(255, 255, 255, 0.9); }
         #home .heading_content #heading_contact a span {
           color: rgba(0, 0, 0, 0.87); }
   #home #down_chevron {
@@ -116,6 +124,14 @@ a {
     bottom: 5%; }
     #home #down_chevron:hover, #home #down_chevron:focus {
       color: #4ad7b1; }
+
+.large-window {
+  height: 400px;
+  width: 100%;
+  background-image: url(../images/1.jpg);
+  background-position: top center;
+  background-repeat: no-reapeat;
+  background-attachement: fixed; }
 
 footer {
   background: rgba(0, 0, 0, 0.87); }

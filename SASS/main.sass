@@ -1,6 +1,7 @@
 $main: rgba(#000000, 0.87)
+$shadow: rgba(#000000, 0.67)
 $uber_light_grey: #d6d6d6
-$whiteish: rgba(#fff, 0.4)
+$whiteish: rgba(#fff, 0.75  )
 $white: rgba(#fff, 0.9)
 $highlight: #4ad7b1
 
@@ -15,6 +16,9 @@ html, body
   font-family: 'Amatic SC', 'Roboto Mono', monospace
   font-size: 16px
   color: $main
+//
+// header
+//   position: fixed
 
 a
   text-decoration: none
@@ -31,7 +35,7 @@ a
 
 .title
   font-family: 'Amatic SC'
-  font-size: 3rem
+  font-size: 3.5rem
   font-weight: 700
 
 .sub_title
@@ -46,6 +50,7 @@ a
 
 
 .navbar
+  position: fixed
   margin: 0
   width: 100%
   background-color: transparent
@@ -65,42 +70,49 @@ a
 
   .nav
     li
+      white-space: nowrap
       a
-        color: #fff
+        color: $whiteish
         &:hover
           // color: $highlight
-          text-decoration: underline
+          color: #fff
+          font-size: 3.2rem
+          // text-decoration: underline:
 
 
 .shrink
   // background-color: #fff
+  margin-bottom: 3rem
   background: $main
-  font-size: 1.75rem
   height: 2.25em
+  box-shadow: 0.15em 0 0.25em 0.2em $shadow
   .container
     padding: 0.25em
-
+    width: 80%
   .title
+    font-size: 2.5rem
     // color: $main
     color: $white
   .nav
     li
       a
+        font-size: 2.5rem
         color: $white
         // color: $main
 
 
+//============ home styles ===============================
 #home
   height: 100vh
   padding: 0
-  background: url("../images/1.jpg")
+  background: url("../images/header.jpg")
   background-position: center
   background-size: cover
   background-repeat: none
   background-color: transparent
-  position: relative
+  background-attachment: fixed
+  // position: relative
   text-align: center
-  // opacity: 0.7
 
 
   .heading_content
@@ -139,7 +151,7 @@ a
         color: $main
         &:hover, &:focus
           text-decoration: none
-          color: $highlight
+          color: $white
         span
           &:hover, &:focus
           color: $main
@@ -152,8 +164,19 @@ a
     &:hover, &:focus
       color: $highlight
 
+//================ large window styles ==========================
+.large-window
+  height: 400px
+  width: 100%
+  background:
+    image: url(../images/1.jpg)
+    position: top center
+    repeat: no-reapeat
+    attachement: fixed
 
 
+
+//================ footer styles ==========================
 footer
   background: $main
   .title
