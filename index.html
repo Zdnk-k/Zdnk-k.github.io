@@ -2,93 +2,127 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!-- normalize css -->
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
         <!-- DA FUKC I DONNO -->
         <meta name="viewport" content="width=device-width">
-        <!-- stylesheet -->
-        <link rel="stylesheet" href="./SASS/main.css" media="screen" title="no title">
+
+
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto|Roboto+Mono" rel="stylesheet">
+
         <!-- font awesome  -->
-        <!-- <link rel="stylesheet" href="/css/font-awesome.min.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="./SASS/main.css" media="screen" title="no title">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
         <title>zdnk.k | Personal page</title>
     </head>
     <body>
-        <header id="main_header">
-          <div class="content">
-            <nav id="navbar">
-              <p id="navbar_logo">zdnk.k</p>
-              <ul id="navbar_links">
-                <li><a href="#about">About ME</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#Blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
+      <!-- ============= NAVIGATION ================== -->
+      <nav class="navbar navbar-default navbar-inverse navbar-fixed-top navbar-custom">
+        <div class="container">
 
-            <div class="heading_content">
-              <div id="home_title">
-                <h1 class="title">zdnk.k</h1>
-                <p class="sub_title"> Zdenko Klain | Personal page</p>
-              </div>
+          <div class="navbar_header page-scroll">
+            <button class="navbar-toggle"></button>
+          </div>
 
-              <div id="heading_contact">
-                <!-- add icon -->
-                <a href="https://github.com/Zdnk-k">
-                  zdnk.k on <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/Zdnk-k/Zdnk-k.github.io">| source</a>
+          <!-- logo -->
+          <a id="navbar-logo" href="#home" class="title navbar-brand">zdnk.k</a>
 
-              </div>
+          <!-- navbar llinks -->
+          <div id="navbar" class="navbar-collapse collapse page-scroll navbar-right">
+            <ul id="navbar-links" class="nav navbar-nav">
+              <li><a href="#about" class="title">About Me</a></li>
+              <li><a href="#projects" class="title">Projects</a></li>
+              <li><a href="#references" class="title">References</a></li>
+              <li><a href="#contact" class="title">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- ================= Home COVER ================= -->
+      <section id="home" class="jumbotron">
+        <!-- titles -->
+        <div class="heading_content">
+            <div id="home_title">
+              <h1 class="title">zdnk.k</h1>
+              <p class="sub_title"> Zdenko Klain | Personal page</p>
             </div>
 
-            <a href="#about" aria-label="Scroll Down" id="down_chevron">
-              <i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i>
-            </a>
+            <!-- heading contaact links -->
+            <div id="heading_contact">
+              <!-- add icon -->
+              <a href="https://github.com/Zdnk-k">
+                zdnk.k on <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <p> | </p>
+              <a href="https://github.com/Zdnk-k/Zdnk-k.github.io">source</a>
+
+            </div>
           </div>
-        </header>
 
-        <section id="about">
-          <div class="content">
-            <h1 class="title">About ME</h1>
-            <p class="text">
-              "Život je ako smrť, len celkom iný."
-              <br>
-              <h3 class="title">
-                The key to being happy:
-              </h3>
-              <p class="text">
-                The universe is a cruel, uncaring void. The key to being happy isn't a search for meaning. It's to just keep yourself busy with unimportant nonsense and eventually, you'll be dead. - Mr Peanutbutter.
-              </p>
-            </p>
-          </div>
-        </section>
+          <a href="#about" aria-label="Scroll Down" id="down_chevron">
+            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
 
-
-
-        <section id="projects">
-          <div class="content">
-            <h1 class="title">Projects</h1>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </section>
+    <!-- about section -->
+    <section id="about" class="container">
+      <h1 class="title">About ME</h1>
+      <p class="quote">
+        "Život je ako smrť, len celkom iný."
+      </p>
+      <h3 class="title">
+        The key to being happy:
+      </h3>
+      <p class="text">
+        The universe is a cruel, uncaring void. The key to being happy isn't a search for meaning. It's to just keep yourself busy with unimportant nonsense and eventually, you'll be dead. - Mr Peanutbutter.
+      </p>
+    </section>
 
 
-        <footer>
-          <div class="content">
-            <h1 class="title">Footer</h1>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </footer>
-    </body>
+    <!-- projects section -->
+    <section id="projects" class="container">
+      <h1 class="title">Projects</h1>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <section id="projects" class="container">
+      <h1 class="title">Projects</h1>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <section id="projects" class="container">
+      <h1 class="title">Projects</h1>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <footer>
+      <div class="content">
+        <h1 class="title">Footer</h1>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
 </html>

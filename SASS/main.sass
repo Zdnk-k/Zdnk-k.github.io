@@ -1,6 +1,7 @@
 $main: rgba(#000000, 0.87)
 $uber_light_grey: #d6d6d6
 $whiteish: rgba(#fff, 0.4)
+$white: rgba(#fff, 0.9)
 $highlight: #4ad7b1
 
 
@@ -21,7 +22,8 @@ a
   &:hover, &:focus
     color: $highlight
 
-.content
+.container
+  padding: 0
   margin: 0 auto
   width: 1440px
   max-width: 90%
@@ -32,8 +34,7 @@ a
   font-size: 3rem
   font-weight: 700
 
-
-.sub-title
+.sub_title
   font-size: 2.5rem
   font-family: 'Amatic SC'
 
@@ -41,39 +42,65 @@ a
   font-family: 'Roboto Mono'
 
 
-.button
 
 
-#main_header
+
+.navbar
+  margin: 0
+  width: 100%
+  background-color: transparent
+  border-bottom: none
+  height: 2.5em
+
+  .container
+    padding: 1em 0 1em 0
+    width: 100%
+    align-self: center
+
+  .navbar-brand
+    margin: 0
+    color: #fff
+    .title
+      text-decoration: none
+
+  .nav
+    li
+      a
+        color: #fff
+        &:hover
+          // color: $highlight
+          text-decoration: underline
+
+
+.shrink
+  // background-color: #fff
+  background: $main
+  font-size: 1.75rem
+  height: 2.25em
+  .container
+    padding: 0.25em
+
+  .title
+    // color: $main
+    color: $white
+  .nav
+    li
+      a
+        color: $white
+        // color: $main
+
+
+#home
   height: 100vh
   padding: 0
-  background: url("../images/header.jpg")
+  background: url("../images/1.jpg")
   background-position: center
   background-size: cover
   background-repeat: none
+  background-color: transparent
   position: relative
-
-  #navbar
-    font-size: 2.75rem
-    font-weight: 700
-    // color: #fff
-    height: 2em
-    #navbar_logo
-      float: left
-
-    #navbar_links
-      padding: 0
-      list-style: none
-      float: right
-      display: inline-block
-      li
-        padding: 0
-        display: inline-block
-        align-self: center
-        a
-          padding-left: 0.4em
-
-
+  text-align: center
+  // opacity: 0.7
 
 
   .heading_content
@@ -83,32 +110,42 @@ a
     transform: translate(-50%, -50%)
 
     #home_title
-      color: #fff
+      color: $white
       font-weight: 700
       padding: 0
+      text-align: center
       .title
         font-size: 10rem
         margin: 0
-        border: solid 0.5rem #fff
 
       .sub_title
         margin: 0.3em
         font-size: 4rem
 
     #heading_contact
-      margin: 2em 2em
+      margin: 2em 1.5em
       background: $whiteish
       border-radius: 0.3rem
-      font-size: 2em
+      font-size: 2rem
       font-family: 'Roboto Mono'
+      display: flex
+      justify-content: center
+      p
+        font-size: 2rem
+        padding: 0 0.5em
+        margin: 0
       a
         padding: 0.1em 0
         color: $main
         &:hover, &:focus
           text-decoration: none
+          color: $highlight
+        span
+          &:hover, &:focus
+          color: $main
 
   #down_chevron
-    color: #fff
+    color: $white
     position: absolute
     left: 50%
     bottom: 5%
