@@ -1,11 +1,10 @@
 $main: rgba(#000000, 0.87)
+$footer-dark: #1d181e
+$shadow: rgba(#000000, 0.67)
 $uber_light_grey: #d6d6d6
-$whiteish: rgba(#fff, 0.4)
+$whiteish: rgba(#fff, 0.75 )
 $white: rgba(#fff, 0.9)
 $highlight: #4ad7b1
-
-
-
 
 html, body
   margin: 0
@@ -21,6 +20,7 @@ a
   color: $main
   &:hover, &:focus
     color: $highlight
+    text-decoration: none
 
 .container
   padding: 0
@@ -31,7 +31,7 @@ a
 
 .title
   font-family: 'Amatic SC'
-  font-size: 3rem
+  font-size: 3.5rem
   font-weight: 700
 
 .sub_title
@@ -39,68 +39,75 @@ a
   font-family: 'Amatic SC'
 
 .text
-  font-family: 'Roboto Mono'
-
-
-
+  font-family: 'Roboto'
 
 
 .navbar
+  font-size: 3.5rem
+  position: fixed
   margin: 0
   width: 100%
   background-color: transparent
   border-bottom: none
-  height: 2.5em
+  height: 1.5em
 
   .container
-    padding: 1em 0 1em 0
+    padding: 0.25em 0 0.25em 0
     width: 100%
     align-self: center
 
   .navbar-brand
     margin: 0
-    color: #fff
+    color: $whiteish
     .title
       text-decoration: none
+      white-space: nowrap
+      &:hover
+        color: #fff
+        font-size: 1.15em
 
   .nav
     li
+      white-space: nowrap
       a
-        color: #fff
+        color: $whiteish
         &:hover
-          // color: $highlight
-          text-decoration: underline
-
+          color: #fff
+          font-size: 1.15em
 
 .shrink
   // background-color: #fff
-  background: $main
-  font-size: 1.75rem
-  height: 2.25em
+  background: #000
+  height: 1.25em
+  box-shadow: 0.1em 0 0.1em 0.1em $shadow
   .container
-    padding: 0.25em
-
+    padding: 0.2em 0 0.2em 0
+    margin: 0 auto
+    width: 90%
   .title
+    font-size: 2.75rem
     // color: $main
     color: $white
   .nav
     li
       a
+        font-size: 2.75rem
         color: $white
         // color: $main
 
 
+//============ home styles ===============================
 #home
   height: 100vh
   padding: 0
-  background: url("../images/1.jpg")
+  background: url(../images/1.jpg)
   background-position: center
   background-size: cover
   background-repeat: none
   background-color: transparent
-  position: relative
+  background-attachment: fixed
+  // position: relative
   text-align: center
-  // opacity: 0.7
 
 
   .heading_content
@@ -124,7 +131,7 @@ a
 
     #heading_contact
       margin: 2em 1.5em
-      background: $whiteish
+      background: rgba($whiteish, 0.2)
       border-radius: 0.3rem
       font-size: 2rem
       font-family: 'Roboto Mono'
@@ -139,25 +146,65 @@ a
         color: $main
         &:hover, &:focus
           text-decoration: none
-          color: $highlight
+          color: $whiteish
         span
           &:hover, &:focus
           color: $main
 
   #down_chevron
-    color: $white
+    color: $whiteish
     position: absolute
-    left: 50%
+
     bottom: 5%
     &:hover, &:focus
-      color: $highlight
+      font-size: 1.3em
+      color: $white
+
+//================ contact styles ==========================
+
+//================ projects styles ==========================
+#projects
+  width: 200px
+
+//================ large window styles ==========================
+.large-window
+  margin: 0
+  padding: 0
+  height: 500px
+  width: 100%
+  background:
+    size: cover
+    position: center
+    repeat: no-reapeat
+    attachment: fixed
+
+#first_window
+  background-image: url(../images/2.jpg)
 
 
+#last_window
+  background-image: url(../images/3.jpg)
 
+//================ footer styles ==========================
 footer
-  background: $main
+  margin: 0
+  padding: 0
+  background: #000
   .title
-    color: #fff
+    color: $white
+    margin: 0
   .text
     padding: 2rem
-    color: #fff
+
+  #contact
+    padding-top: 1em
+    font-size: 2.35rem
+    ul
+      list-style: none
+      display: inline
+      li
+        a
+          color: $white
+          &:hover, &:focus
+            color: $highlight
+            text-decoration: none
