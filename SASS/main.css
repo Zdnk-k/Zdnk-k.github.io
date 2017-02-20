@@ -11,7 +11,8 @@ a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.87); }
   a:hover, a:focus {
-    color: #4ad7b1; }
+    color: #4ad7b1;
+    text-decoration: none; }
 
 .container {
   padding: 0;
@@ -30,51 +31,56 @@ a {
   font-family: "Amatic SC"; }
 
 .text {
-  font-family: "Roboto Mono"; }
+  font-family: "Roboto"; }
 
 .navbar {
+  font-size: 3.5rem;
   position: fixed;
   margin: 0;
   width: 100%;
   background-color: transparent;
   border-bottom: none;
-  height: 2.5em; }
+  height: 1.5em; }
   .navbar .container {
-    padding: 1em 0 1em 0;
+    padding: 0.25em 0 0.25em 0;
     width: 100%;
     align-self: center; }
   .navbar .navbar-brand {
     margin: 0;
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.75); }
     .navbar .navbar-brand .title {
-      text-decoration: none; }
+      text-decoration: none;
+      white-space: nowrap; }
+      .navbar .navbar-brand .title:hover {
+        color: #fff;
+        font-size: 1.15em; }
   .navbar .nav li {
     white-space: nowrap; }
     .navbar .nav li a {
       color: rgba(255, 255, 255, 0.75); }
       .navbar .nav li a:hover {
         color: #fff;
-        font-size: 3.2rem; }
+        font-size: 1.15em; }
 
 .shrink {
-  margin-bottom: 3rem;
-  background: rgba(0, 0, 0, 0.87);
-  height: 2.25em;
-  box-shadow: 0.15em 0 0.25em 0.2em rgba(0, 0, 0, 0.67); }
+  background: #000;
+  height: 1.25em;
+  box-shadow: 0.1em 0 0.1em 0.1em rgba(0, 0, 0, 0.67); }
   .shrink .container {
-    padding: 0.25em;
-    width: 80%; }
+    padding: 0.2em 0 0.2em 0;
+    margin: 0 auto;
+    width: 90%; }
   .shrink .title {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: rgba(255, 255, 255, 0.9); }
   .shrink .nav li a {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     color: rgba(255, 255, 255, 0.9); }
 
 #home {
   height: 100vh;
   padding: 0;
-  background: url("../images/header.jpg");
+  background: url(../images/1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -99,7 +105,7 @@ a {
         font-size: 4rem; }
     #home .heading_content #heading_contact {
       margin: 2em 1.5em;
-      background: rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, 0.2);
       border-radius: 0.3rem;
       font-size: 2rem;
       font-family: "Roboto Mono";
@@ -114,31 +120,55 @@ a {
         color: rgba(0, 0, 0, 0.87); }
         #home .heading_content #heading_contact a:hover, #home .heading_content #heading_contact a:focus {
           text-decoration: none;
-          color: rgba(255, 255, 255, 0.9); }
+          color: rgba(255, 255, 255, 0.75); }
         #home .heading_content #heading_contact a span {
           color: rgba(0, 0, 0, 0.87); }
   #home #down_chevron {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.75);
     position: absolute;
-    left: 50%;
     bottom: 5%; }
     #home #down_chevron:hover, #home #down_chevron:focus {
-      color: #4ad7b1; }
+      font-size: 1.3em;
+      color: rgba(255, 255, 255, 0.9); }
+
+#projects {
+  width: 200px; }
 
 .large-window {
-  height: 400px;
+  margin: 0;
+  padding: 0;
+  height: 500px;
   width: 100%;
-  background-image: url(../images/1.jpg);
-  background-position: top center;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-reapeat;
-  background-attachement: fixed; }
+  background-attachment: fixed; }
+
+#first_window {
+  background-image: url(../images/2.jpg); }
+
+#last_window {
+  background-image: url(../images/3.jpg); }
 
 footer {
-  background: rgba(0, 0, 0, 0.87); }
+  margin: 0;
+  padding: 0;
+  background: #000; }
   footer .title {
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0; }
   footer .text {
-    padding: 2rem;
-    color: #fff; }
+    padding: 2rem; }
+  footer #contact {
+    padding-top: 1em;
+    font-size: 2.35rem; }
+    footer #contact ul {
+      list-style: none;
+      display: inline; }
+      footer #contact ul li a {
+        color: rgba(255, 255, 255, 0.9); }
+        footer #contact ul li a:hover, footer #contact ul li a:focus {
+          color: #4ad7b1;
+          text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
