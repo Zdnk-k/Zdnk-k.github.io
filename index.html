@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!-- referesh -->
+        <!-- <meta http-equiv="refresh" content="3" > -->
         <!-- normalize css -->
         <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
 
@@ -10,7 +12,7 @@
 
 
         <!-- FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto|Roboto+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto|Roboto+Mono|Noto+Sans" rel="stylesheet">
 
         <!-- font awesome  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,7 +44,7 @@
               <ul id="navbar-links" class="nav navbar-nav">
                 <li><a href="#about" class="title">About Me</a></li>
                 <li><a href="#projects" class="title">Projects</a></li>
-                <li><a href="#references" class="title">References</a></li>
+                <!-- <li><a href="#references" class="title">References</a></li> -->
                 <li><a href="#contact" class="title">Contact</a></li>
               </ul>
             </div>
@@ -52,92 +54,161 @@
 
         <!-- ================= Home COVER ================= -->
         <section id="home" class="jumbotron">
-          <!-- titles -->
-          <div class="heading_content">
-            <div id="home_title">
-              <h1 class="title">zdnk.k</h1>
-              <p class="sub_title"> Zdenko Klain | Personal page</p>
+            <!-- titles -->
+            <div class="heading_content">
+              <div id="home_title">
+                <h1 class="title">zdnk.k</h1>
+                <p class="sub_title"> Zdenko Klain | Personal page</p>
+              </div>
+
+              <!-- heading contaact links -->
+              <div id="heading_contact">
+                <!-- add icon -->
+                <a href="https://github.com/Zdnk-k">
+                  zdnk.k on <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
 
-            <!-- heading contaact links -->
-            <div id="heading_contact">
-              <!-- add icon -->
-              <a href="https://github.com/Zdnk-k">
-                zdnk.k on <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-              <p> | </p>
-              <a href="https://github.com/Zdnk-k/Zdnk-k.github.io">source</a>
-
-            </div>
+            <a href="#about" aria-label="Scroll Down" id="down_chevron">
+              <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
+            </a>
           </div>
-
-          <a href="#about" aria-label="Scroll Down" id="down_chevron">
-            <i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i>
-          </a>
-        </div>
-      </section>
-
+        </section>
       </header>
 
     <!-- about section -->
     <section id="about" class="container">
       <h1 class="title">About ME</h1>
-      <p class="quote">
-        "Život je ako smrť, len celkom iný."
-      </p>
-      <h3 class="title">
-        The key to being happy:
-      </h3>
       <p class="text">
-        The universe is a cruel, uncaring void. The key to being happy isn't a search for meaning. It's to just keep yourself busy with unimportant nonsense and eventually, you'll be dead. - Mr Peanutbutter.
+        Good day to you dear visitor!
+        <br/>
+        My name is Zdenko Klain.
+        I'm an IT enthusiast.
+
       </p>
+      <a href="./docs/cv.pdf">
+        <i class="fa fa-usercircle"></i>
+        CV
+      </a>
+
+      <!-- <h3 class="sub_title">Experiance</h3>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> -->
+      <div class="col-md-4">
+        <h3 class="sub_title">IT sills:</h3>
+        <ul class="list_shite">
+          <li><i class="fa fa-html5"></i>  HTML</li>
+          <li><i class="fa fa-css3"></i>  CSS</li>
+          <li><i class="fa fa-code"></i>  Javascript</li>
+          <!-- <li><img src="./icons/JS.svg" alt="">Javascript</li> -->
+
+          <li><i class="fa fa-code"></></i>  Python</li>
+          <!-- <li><img src="./icons/python.svg" alt=""> Python</li> -->
+
+          <li><i class="fa fa-code"></i>  Java</li>
+          <!-- <li><img src="./icons/java.svg" alt=""> Java</li> -->
+          <li><i class="fa fa-database"></i>  SQL</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="sub_title">Language skills:</h3>
+        <ul class="list_shite">
+          <li>English B2</li>
+          <li>German A2</li>
+          <li>Norwegian A1</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="sub_title">My hobbies:</h3>
+        <ul class="list_shite">
+          <li><i class="fa fa-music"></i>Music</li>
+          <li><i class="fa fa-guitar"></i>Guitar</li>
+          <li><i class="fa fa-plane"></i>Travelling</li>
+          <li><i class="fa fa-film"></i>Movies</li>
+          <li><i class="fa fa-book"></i>Books</li>
+          <li><i class="fa fa-gamepad"></i>PC Games</li>
+          <li><i class="fa fa-linux"></i>linux</li>
+        </ul>
+      </div>
     </section>
 
+    <!-- large bg window -->
+    <div id="first_window"class="large-window"></div>
 
     <!-- projects section -->
     <section id="projects" class="container">
       <h1 class="title">Projects</h1>
-      <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
 
-    <div id="first_window"class="large-window"></div>
-
-    <section id="projects" class="container">
-      <h1 class="title">Projects</h1>
-      <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
-
-    <div id="last_window"class="large-window"></div>
-
-    <section id="contact" class="container">
-
-    </section>
-
-    <footer>
-      <div class="container">
-        <div id="contact">
-          <h1 class="title">Contact</h1>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/zdenko-klain-a83656120/">
-                <i class="fa fa-linkedin"></i>  Zdenko Klain</a>
-              </li>
-              <li>
-                <a href=""><i class="fa fa-envelope"></i>  zdenkoklain@gmail.com</a>
-              </li>
-              <li>
-                <a href=""><i class="fa fa-github"></i>  Zdnk-k</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/zdnk_k"><i class="fa fa-twitter"></i>  Zdnk_k</a>
-              </li>
-            </ul>
-          </div>
+      <div class="col-md-4">
+        <h3 class="sub_title">Python</h3>
+        <ul class="list_shite">
+          <li><a href="#">Bulls and Cows</a></li>
+          <li><a href="#">Tic-Tac-Toe</a></li>
+          <li><a href="#">Battleships</a></li>
+          <li><a href="#">MD5 cracker</a></li>
+        </ul>
       </div>
+
+      <div class="col-md-4">
+        <h3 class="sub_title">Java</h3>
+        <ul class="list_shite">
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="sub_title">Web</h3>
+        <ul class="list_shite">
+          <li><a href=""></a>Geona.sk</li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <div id="last_window"class="large-window">
+      <p class="quote">
+        "Život je ako smrť, len celkom iný."
+      </p>
+    </div>
+
+    <footer id="contact">
+      <h1 class="title">zdnkk:</h1>
+
+      <ul class="contact_list">
+        <li>
+          <a href="mailto:zdenkoklain@gmail.com"><i class="fa fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/zdenko-klain-a83656120/">
+            <i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Zdnk-k"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/zdnk_k"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/zdnk.k/"><i class="fa fa-instagram"></i></a>
+        </li>
+      </ul>
+
+      <a id="source" href="https://github.com/Zdnk-k/Zdnk-k.github.io"><i class="fa fa-code"></i> source</a>
+
+      <p class="copyright">&copy; 2017 Zdenko Klain</p>
 
     </footer>
 

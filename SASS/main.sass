@@ -2,8 +2,10 @@ $main: rgba(#000000, 0.87)
 $footer-dark: #1d181e
 $shadow: rgba(#000000, 0.67)
 $uber_light_grey: #d6d6d6
-$whiteish: rgba(#fff, 0.75 )
+$whiteish: rgba(#fff, 0.825 )
 $white: rgba(#fff, 0.9)
+$transparent: rgba(#fff, 0.3)
+$highlight_blue: #217cb4
 $highlight: #4ad7b1
 
 html, body
@@ -11,13 +13,32 @@ html, body
   padding: 0
   height: 100%
   width: 100%
-  font-family: 'Amatic SC', 'Roboto Mono', monospace
+  font-family: 'Roboto',sans-serif, 'Roboto Mono', monospace
   font-size: 16px
   color: $main
+
+// fonts styles
+.title, .sub_title
+  font-family: 'Amatic SC'
+  font-weight: 700
+
+.sub_title
+  font-size: 2.5rem
+
+.title
+  font-size: 3.5rem
+
+.text
+  font-size: 1.2rem
+  font-family: 'Roboto'
+
+.quote
+  // font-family:
 
 a
   text-decoration: none
   color: $main
+
   &:hover, &:focus
     color: $highlight
     text-decoration: none
@@ -29,19 +50,12 @@ a
   max-width: 90%
   text-align: center
 
-.title
-  font-family: 'Amatic SC'
-  font-size: 3.5rem
-  font-weight: 700
 
-.sub_title
-  font-size: 2.5rem
-  font-family: 'Amatic SC'
-
-.text
-  font-family: 'Roboto'
+.list_shite
+  list-style: none
 
 
+// ============= NAVBAR STYLES ==============
 .navbar
   font-size: 3.5rem
   position: fixed
@@ -72,11 +86,15 @@ a
       a
         color: $whiteish
         &:hover
+          // color: $highlight_blue
+          // background: $transparent
+          // border-radius: 0.21rem
           color: #fff
-          font-size: 1.15em
+          // font-size: 1.15em
 
+//=============== SMALL NAVBAR =====================
 .shrink
-  // background-color: #fff
+  // background-color:
   background: #000
   height: 1.25em
   box-shadow: 0.1em 0 0.1em 0.1em $shadow
@@ -87,12 +105,12 @@ a
   .title
     font-size: 2.75rem
     // color: $main
-    color: $white
+    color: $whiteish
   .nav
     li
       a
         font-size: 2.75rem
-        color: $white
+        color: $whiteish
         // color: $main
 
 
@@ -160,11 +178,11 @@ a
       font-size: 1.3em
       color: $white
 
-//================ contact styles ==========================
+//================ About styles ==========================
+#about
 
 //================ projects styles ==========================
 #projects
-  width: 200px
 
 //================ large window styles ==========================
 .large-window
@@ -185,26 +203,43 @@ a
 #last_window
   background-image: url(../images/3.jpg)
 
+
 //================ footer styles ==========================
-footer
-  margin: 0
-  padding: 0
+// footer
+//   margin: 0
+//   padding: 0
+
+#contact
   background: #000
+  // padding: 0.5em 0 1em 0
+  padding: 0
+  font-size: 2.35rem
+  text-align: center
+  align-items: center
   .title
     color: $white
     margin: 0
-  .text
-    padding: 2rem
+  a
+    color: $whiteish
+    font-weight: 400
+    padding: 1em 2em
+    &:hover, &:focus
+      // color: $highlight_blue
+      color: #fff
 
-  #contact
-    padding-top: 1em
-    font-size: 2.35rem
-    ul
-      list-style: none
+  #source
+    font-family: 'Roboto Mono'
+    font-size: 0.5em
+
+  .contact_list
+    list-style: none
+    margin: 0
+    padding-top: 0.75em
+    li
       display: inline
-      li
-        a
-          color: $white
-          &:hover, &:focus
-            color: $highlight
-            text-decoration: none
+
+  .copyright
+    margin: 0
+    padding: 0
+    color: $whiteish
+    font-size: 0.25em
