@@ -5,27 +5,24 @@ html, body {
   width: 100%;
   font-family: "Roboto", sans-serif, "Roboto Mono", monospace;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.87); }
+  color: #000; }
 
 .title, .sub_title {
-  font-family: "Amatic SC";
-  font-weight: 700; }
-
-.sub_title {
-  font-size: 2.5rem; }
-
-.title {
-  font-size: 3.5rem; }
+  font-weight: 300;
+  text-transform: uppercase; }
 
 .text {
-  font-size: 1.2rem;
-  font-family: "Roboto"; }
+  font-size: 1rem;
+  font-weight: 100; }
+
+.quote {
+  font-style: italic; }
 
 a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.87); }
+  color: #000; }
   a:hover, a:focus {
-    color: #4ad7b1;
+    color: #000;
     text-decoration: none; }
 
 .container {
@@ -39,57 +36,59 @@ a {
   list-style: none; }
 
 .navbar {
-  font-size: 3.5rem;
+  height: 1.5em;
   position: fixed;
   margin: 0;
   width: 100%;
   background-color: transparent;
-  border-bottom: none;
-  height: 1.5em; }
+  border-bottom: none; }
   .navbar .container {
     padding: 0.25em 0 0.25em 0;
-    width: 100%;
+    width: 80%;
     align-self: center; }
-  .navbar .navbar-brand {
+  .navbar #navbar-logo {
+    color: rgba(255, 255, 255, 0.75);
+    padding: 0;
     margin: 0;
-    color: rgba(255, 255, 255, 0.825); }
-    .navbar .navbar-brand .title {
-      text-decoration: none;
-      white-space: nowrap; }
-      .navbar .navbar-brand .title:hover {
-        color: #fff;
-        font-size: 1.15em; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    white-space: nowrap; }
+    .navbar #navbar-logo:hover, .navbar #navbar-logo:focus {
+      border-bottom: 0.1rem solid #000;
+      color: #fff; }
   .navbar .nav li {
     white-space: nowrap; }
     .navbar .nav li a {
-      color: rgba(255, 255, 255, 0.825); }
-      .navbar .nav li a:hover {
-        color: #fff; }
+      font-size: 1rem;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.75); }
 
-.shrink {
-  background: #000;
+.navbar-small {
+  background: white;
   height: 1.25em;
-  box-shadow: 0.1em 0 0.1em 0.1em rgba(0, 0, 0, 0.67); }
-  .shrink .container {
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.67); }
+  .navbar-small .container {
     padding: 0.2em 0 0.2em 0;
     margin: 0 auto;
-    width: 90%; }
-  .shrink .title {
-    font-size: 2.75rem;
-    color: rgba(255, 255, 255, 0.825); }
-  .shrink .nav li a {
-    font-size: 2.75rem;
-    color: rgba(255, 255, 255, 0.825); }
+    width: 8 0%; }
+  .navbar-small .title {
+    font-size: 1.75rem;
+    color: #000; }
+  .navbar-small #navbar-logo {
+    color: #000; }
+  .navbar-small .nav li a {
+    color: #000; }
 
 #home {
   height: 100vh;
   padding: 0;
-  background: url(../images/1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  background-color: transparent;
-  background-attachment: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/header1.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   text-align: center; }
   #home .heading_content {
     position: absolute;
@@ -97,21 +96,24 @@ a {
     left: 50%;
     transform: translate(-50%, -50%); }
     #home .heading_content #home_title {
-      color: rgba(255, 255, 255, 0.9);
-      font-weight: 700;
+      color: #fff;
       padding: 0;
       text-align: center; }
       #home .heading_content #home_title .title {
+        text-transform: uppercase;
+        font-weight: 700;
         font-size: 10rem;
         margin: 0; }
       #home .heading_content #home_title .sub_title {
-        margin: 0.3em;
-        font-size: 4rem; }
+        margin: 0em;
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.75); }
     #home .heading_content #heading_contact {
       margin: 2em 1.5em;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.5);
       border-radius: 0.3rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-family: "Roboto Mono";
       display: flex;
       justify-content: center; }
@@ -124,51 +126,79 @@ a {
         color: rgba(0, 0, 0, 0.87); }
         #home .heading_content #heading_contact a:hover, #home .heading_content #heading_contact a:focus {
           text-decoration: none;
-          color: rgba(255, 255, 255, 0.825); }
+          color: #4ad7b1; }
         #home .heading_content #heading_contact a span {
           color: rgba(0, 0, 0, 0.87); }
   #home #down_chevron {
-    color: rgba(255, 255, 255, 0.825);
+    color: rgba(255, 255, 255, 0.75);
     position: absolute;
     bottom: 5%; }
     #home #down_chevron:hover, #home #down_chevron:focus {
       font-size: 1.3em;
       color: rgba(255, 255, 255, 0.9); }
 
+#about .title {
+  margin: 2rem 0;
+  text-align: center; }
+#about .title::after {
+  content: "";
+  height: 2px;
+  max-width: 80px;
+  display: block;
+  margin: 0.5em auto;
+  background: #000; }
+
+#projects {
+  list-style: none; }
+  #projects li {
+    display: flex;
+    align-items: stretch; }
+
 .large-window {
   margin: 0;
   padding: 0;
   height: 500px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-reapeat;
   background-attachment: fixed; }
 
 #first_window {
-  background-image: url(../images/2.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/svartisen.jpg");
+  background-position: top; }
+  #first_window .quote {
+    color: #fff;
+    font-size: 2.5rem; }
 
 #last_window {
-  background-image: url(../images/3.jpg); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/beach.jpg); }
+  #last_window .quote {
+    color: #fff;
+    font-size: 2.5rem; }
 
 #contact {
-  background: #000;
+  background: white;
   padding: 0;
   font-size: 2.35rem;
   text-align: center;
   align-items: center; }
   #contact .title {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.87);
     margin: 0; }
   #contact a {
-    color: rgba(255, 255, 255, 0.825);
+    color: rgba(0, 0, 0, 0.87);
     font-weight: 400;
     padding: 1em 2em; }
     #contact a:hover, #contact a:focus {
-      color: #fff; }
+      color: rgba(0, 0, 0, 0.87); }
   #contact #source {
     font-family: "Roboto Mono";
-    font-size: 0.5em; }
+    font-size: 0.5em;
+    padding: 1rem; }
   #contact .contact_list {
     list-style: none;
     margin: 0;
@@ -176,9 +206,11 @@ a {
     #contact .contact_list li {
       display: inline; }
   #contact .copyright {
-    margin: 0;
-    padding: 0;
-    color: rgba(255, 255, 255, 0.825);
+    padding-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.54);
     font-size: 0.25em; }
+
+#fuck {
+  font-weight: 100; }
 
 /*# sourceMappingURL=main.css.map */
